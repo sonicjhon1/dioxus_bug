@@ -1,0 +1,26 @@
+# [unstable]
+# codegen-backend = true
+
+# [profile.server-dev]
+# codegen-backend = "cranelift"
+
+# [build]
+# rustflags = [
+#     "-Zunleash-the-miri-inside-of-you",
+#     "-Znext-solver=coherence",
+#     "-Zshare-generics=y",
+#     "-Zthreads=0",
+# ]
+
+# [target.x86_64-unknown-linux-gnu]
+# linker = "clang"
+# rustflags = [
+#     "-Clink-arg=-fuse-ld=mold",
+#     "-Zunleash-the-miri-inside-of-you",
+#     "-Znext-solver=coherence",
+#     "-Zshare-generics=y",
+#     "-Zthreads=0",
+# ]
+
+# [target.x86_64-pc-windows-msvc]
+# linker = "rust-lld"
