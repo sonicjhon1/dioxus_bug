@@ -3,5 +3,10 @@ name = "web"
 version = "0.1.0"
 edition = { workspace = true }
 
+[features]
+default = []
+web = ["dioxus/web"]
+server = ["dioxus/server"]
+
 [dependencies]
-dioxus = { workspace = true, features = ["fullstack", "web", "router"] }
+dioxus = { workspace = true, features = ["fullstack", "router"] }

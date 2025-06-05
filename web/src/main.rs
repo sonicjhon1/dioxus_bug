@@ -1,7 +1,7 @@
 use dioxus::prelude::*;
 
 fn main() {
-    dioxus::LaunchBuilder::web().launch(|| {
+    dioxus::launch(|| {
         rsx! {
             Router::<web::Route> {}
         }

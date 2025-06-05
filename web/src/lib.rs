@@ -16,7 +16,7 @@ pub fn Index() -> Element {
         document::Link { rel: "stylesheet", href: MAIN_CSS }
         div {
             "There should be an image:"
-            img { src: IMG }
+            img { class: "img", src: IMG }
         }
         div {
             "The background should be blue, the text should be white:"

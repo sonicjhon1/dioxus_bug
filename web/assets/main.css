@@ -5,6 +5,10 @@ body {
 	margin: 20px;
 }
 
+.img {
+	width: 20%;
+}
+
 .blue {
 	background: blue;
 	color: white;

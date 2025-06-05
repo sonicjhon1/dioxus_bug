@@ -3,6 +3,11 @@ name = "server"
 version = "0.1.0"
 edition = { workspace = true }
 
+[features]
+default = []
+web = ["dioxus/web"]
+server = ["dioxus/server"]
+
 [dependencies]
 axum = { version = "0.8.4", features = [
     "multipart",
@@ -10,6 +15,6 @@ axum = { version = "0.8.4", features = [
     "tracing",
     "macros",
 ] }
-dioxus = { workspace = true, features = ["fullstack", "router", "server"] }
+dioxus = { workspace = true, features = ["fullstack", "router"] }
 web = { workspace = true }
 tokio = { version = "1.45.1" }
